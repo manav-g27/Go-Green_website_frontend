@@ -1,0 +1,92 @@
+section {
+	display: flex;
+	min-height: 100vh;
+}
+
+.left,
+.right {
+	flex: 1;
+}
+
+.left
+{
+	flex: 0.7;
+}
+
+.left .inner {
+	height: 100vh;
+	display: block;
+}
+
+.right .inner {
+	padding: 40px 200px;
+	font-size: 20px;
+	text-align: left;
+}
+
+.right
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.right .inner p
+{
+	line-height: 5vh;
+}
+
+
+.right .inner h2
+{
+	font-size: 80px;
+}
+
+.left .inner.sticky {
+	position: sticky;
+	top: 0;
+}
+
+.left .inner.sticky .bg {
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 100%;
+}
+
+#back1
+{
+    background-image: url('../../assets/img/back1.jpg');
+	background-attachment: fixed;
+	background-position: right center;
+}
+#back2
+{
+	background-image: url('../../assets/img/back2.webp');
+	background-attachment: fixed;
+	background-position: right center; 
+}
+.spn
+{
+	color: #1cc063;
+	position: relative;
+	display: inline-block;
+}
+
+.spn .under-div
+{
+	position: absolute;
+	bottom: 0;
+	height: 4px;
+	background-color: #1cc063;
+	border-radius: 10px;
+	width: 0%;
+	transition: width 3s;
+	
+}
+

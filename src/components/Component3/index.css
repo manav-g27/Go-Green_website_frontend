@@ -1,0 +1,42 @@
+
+    .intro {
+    height: auto;
+    position: relative;
+    width: auto;
+  }
+  
+  .intro video {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    height: fit-content;
+  }
+  
+  .intro h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    color: white;
+    text-shadow: 5px 5px 7px rgb(46, 44, 44);
+  }
+  
+  .intro span
+  {
+    display: block;
+    /* animation: reveal 2s cubic-bezier(0.77, 0, 0.175, 1) 0.5s; */
+  }
+
+  @keyframes reveal {
+    0% {
+      transform: translate(0,100%);
+      font-size: 20px;
+    }
+    100% {
+      transform: translate(0,0);
+      font-size: 80px;
+    }
+  
+  }
+    
